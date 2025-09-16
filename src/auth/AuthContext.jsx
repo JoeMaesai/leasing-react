@@ -34,7 +34,7 @@ export function AuthProvider({ children }) {
     const data = await res.json();
     setUser(data.user);
   }
-
+ 
   async function logout() {
     await fetch("http://localhost:3000/api/logout", { method: "POST", credentials: "include" });
     setUser(null);
