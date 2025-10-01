@@ -9,7 +9,7 @@ import App from "./App";
 import Login from "./pages/Login";
 import Main from "./pages/Main";
 import A01CreatePackage from "./pages/A01CreatePackage";
-import A02CreateCustomer from "./pages/A02CreateCustomer";
+import A02CreateUser from "./pages/A02CreateUser";
 import A03ReceivePayment from "./pages/A03ReceivePayment";
 
 const router = createBrowserRouter([
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
             children: [
               { index: true, element: <A01CreatePackage /> },      // "/main"
               { path: "createpackage", element: <A01CreatePackage /> },// "/main/dashboard"
-              { path: "createcustomer", element: <A02CreateCustomer /> },    // "/main/profile"
+              { path: "createuser", element: <A02CreateUser /> },    // "/main/profile"
               { path: "receivepayment", element: <A03ReceivePayment /> },  // "/main/settings"
               { path: "*", element: <Navigate to="." replace /> },
             ]

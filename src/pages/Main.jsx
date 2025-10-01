@@ -30,14 +30,14 @@ export default function Main() {
             Create Package
           </NavLink>
           <NavLink
-            to="createcustomer"
+            to="createuser"
             className={({ isActive }) =>
               `rounded px-3 py-2 hover:bg-gray-200 ${
                 isActive ? "bg-gray-300 font-semibold" : ""
               }`
             }
           >
-            Create Customer
+            Create User
           </NavLink>
           <NavLink
             to="receivepayment"
