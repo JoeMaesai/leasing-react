@@ -51,7 +51,7 @@ export default function A01CreatePackage() {
       .then(data => {
         console.log("Server response:", data);
         // ✅ Alert user
-        alert("Package saved successfully!");
+        alert("Package saved successfully!"); 
 
         // ✅ Reset form
         resetForm();
